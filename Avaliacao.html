@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Imóveis - RD Almeida Engenharia</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #F5F5F5; }
+        header { background: #FFFFFF; color: #4D4D4D; padding: 15px; display: flex; align-items: center; justify-content: space-between; }
+        header img { max-width: 150px; margin-left: 20px; }
+        nav { margin-right: 20px; position: relative; }
+        nav a { color: #800000; text-decoration: none; padding: 10px; font-weight: bold; position: relative; }
+        .dropdown { position: relative; display: inline-block; }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #800000;
+            min-width: 220px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+        }
+        .dropdown-content a:hover {
+            background-color: white;
+            color: #800000;
+            text-decoration: none;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        section { padding: 20px; text-align: center; color: #333; }
+        footer { background: #4D4D4D; color: white; text-align: center; padding: 15px; position: fixed; bottom: 0; width: 100%; }
+        form { max-width: 400px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        input, textarea { width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px; }
+        button { background: #800000; color: white; border: none; padding: 10px 20px; cursor: pointer; }
+        button:hover { background: #660000; }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="CAPA - Copia.png" alt="Logomarca da Empresa">
+        <nav>
+            <a href="./index.html">Home</a>
+            <div class="dropdown">
+                <a href="./servicos.html">Serviços</a>
+                <div class="dropdown-content">
+                    <a href="./avaliacao.html">Avaliação de Imóveis</a>
+                    <a href="./vistoria_cautelar.html">Vistoria - Cautelar de Vizinhança</a>
+                    <a href="./vistoria_entrega.html">Vistoria - Entrega de Chaves</a>
+                    <a href="./vistoria_locativa.html">Vistoria - Locativa</a>
+                    <a href="./vistoria_obras.html">Vistoria - Obras</a>
+                </div>
+            </div>
+            <a href="./contato.html">Contato</a>
+        </nav>
+    </header>
+    
+    <section>
+        <h2>Solicite uma Avaliação de Imóvel</h2>
+        <p>Preencha o formulário abaixo para solicitar uma avaliação de imóvel.</p>
+        <form action="https://formsubmit.co/davidfalmeida.eng@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Contato Site - Avaliação de Imóveis">
+            <input type="text" name="name" placeholder="Seu nome" required><br>
+            <input type="email" name="email" placeholder="Seu e-mail" required><br>
+            <textarea name="message" placeholder="Descreva sua solicitação" required></textarea><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <footer>
+        &copy; 2025 RD Almeida Engenharia e Serviços
+    </footer>
+</body>
+</html>
