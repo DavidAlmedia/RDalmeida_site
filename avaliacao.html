@@ -6,7 +6,7 @@
     <title>Avaliação de Imóveis - RD Almeida Engenharia</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #F5F5F5; }
-        header { background: #FFFFFF; color: #4D4D4D; padding: 15px; display: flex; align-items: center; justify-content: space-between; }
+        header { background: #FFFFFF; color: #4D4D4D; padding: 15px; display: flex; align-items: center; justify-content: space-between; position: fixed; top: 0; width: 100%; z-index: 1000; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); height: 80px; }
         header img { max-width: 150px; margin-left: 20px; }
         nav { margin-right: 20px; position: relative; }
         nav a { color: #800000; text-decoration: none; padding: 10px; font-weight: bold; position: relative; }
@@ -33,6 +33,16 @@
         .dropdown:hover .dropdown-content {
             display: block;
         }
+        .full-width-banner {
+            background-color: #800000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            width: 100%;
+            margin-top: 80px;
+        }
         section { 
             padding: 20px; 
             text-align: center; 
@@ -46,18 +56,6 @@
         .content {
             max-width: 800px;
             text-align: justify;
-        }
-        h2 {
-            font-size: 24px;
-            font-weight: bold;
-            text-align: center;
-            margin-top: 20px;
-        }
-        .highlight {
-            background-color: #800000;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
         }
         footer { background: #4D4D4D; color: white; text-align: center; padding: 15px; position: fixed; bottom: 0; width: 100%; }
         form { 
@@ -78,9 +76,10 @@
     </style>
 </head>
 <body>
-    <header style="position: fixed; top: 0; width: 100%; z-index: 1000; background: #FFFFFF; padding: 15px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+    <header>
         <img src="CAPA - Copia.png" alt="Logomarca da Empresa">
         <h1 style="color: #800000; text-align: center; font-size: 26px; flex-grow: 1;">Avaliação de Imóveis</h1>
+        <nav>
         <nav>
             <a href="./index.html">Home</a>
             <div class="dropdown">
@@ -97,15 +96,16 @@
         </nav>
     </header>
     
-    <section style="padding-top: 80px;">
+    <div class="full-width-banner" style="margin-top: 120px;">A importância do Laudo de Avaliação de Imóveis</div>
+    <section>
         <div class="content">
-            <h2 class="highlight">A importância do Laudo de Avaliação de Imóveis</h2>
             <p>O laudo de avaliação de imóveis é um documento técnico fundamental para determinar o valor real de um imóvel com base em critérios normativos e científicos. No Brasil, a Norma Brasileira NBR 14653-1 e NBR 14653-2 da ABNT estabelecem as diretrizes técnicas para a avaliação imobiliária, garantindo precisão e confiabilidade no processo.</p>
             <p>Além das normas técnicas, a legislação brasileira define que somente engenheiros e arquitetos têm atribuição legal para realizar avaliações imobiliárias. A Lei nº 5.194/1966, que regula o exercício das profissões de Engenharia e Arquitetura, e a Resolução nº 1.010/2005 do CONFEA estabelecem que a emissão de laudos de avaliação de imóveis é uma atribuição exclusiva desses profissionais, assegurando maior credibilidade e validade técnica.</p>
             <p>É importante diferenciar o <strong>Laudo de Avaliação de Imóveis</strong>, elaborado por engenheiros e arquitetos, do <strong>Parecer Técnico de Avaliação Mercadológica (PTAM)</strong>, que pode ser emitido por corretores de imóveis. O PTAM tem caráter informativo e não possui o mesmo rigor técnico e respaldo legal que um laudo elaborado por um profissional habilitado conforme as normas e legislações vigentes.</p>
         </div>
-        
-        <h2>Solicite uma Avaliação de Imóvel</h2>
+    </section>
+    <div class="full-width-banner">Solicite uma Avaliação de Imóvel</div>
+    <section>
         <p>Preencha o formulário abaixo para solicitar uma avaliação de imóvel.</p>
         <form action="https://formsubmit.co/davidfalmeida.eng@gmail.com" method="POST">
             <input type="hidden" name="_subject" value="Contato Site - Avaliação de Imóveis">
@@ -121,4 +121,3 @@
     </footer>
 </body>
 </html>
-
