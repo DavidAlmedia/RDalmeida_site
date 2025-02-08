@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engenharia e Serviços</title>
+    <title>Fale Conosco - RD Almeida Engenharia</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #F5F5F5; }
-        header { background: #FFFFFF; color: #4D4D4D; padding: 15px; text-align: center; }
-        header img { max-width: 150px; display: block; margin: 0 auto; }
-        nav { text-align: center; background: #800000; padding: 10px; }
-        nav a { color: white; text-decoration: none; padding: 10px; }
+        header { background: #FFFFFF; color: #4D4D4D; padding: 15px; display: flex; align-items: center; justify-content: space-between; }
+        header img { max-width: 150px; margin-left: 20px; }
+        nav { margin-right: 20px; }
+        nav a { color: #800000; text-decoration: none; padding: 10px; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
         section { padding: 20px; text-align: center; color: #333; }
         footer { background: #4D4D4D; color: white; text-align: center; padding: 15px; position: fixed; bottom: 0; width: 100%; }
+        form { max-width: 400px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        input, textarea { width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px; }
         button { background: #800000; color: white; border: none; padding: 10px 20px; cursor: pointer; }
         button:hover { background: #660000; }
     </style>
@@ -19,32 +22,24 @@
 <body>
     <header>
         <img src="CAPA - Copia.png" alt="Logomarca da Empresa">
-        <h1> </h1>
+        <nav>
+            <a href="inicio.html" target="_blank">Início</a>
+            <a href="contato.html" target="_blank">Fale Conosco</a>
+            <a href="blog.html" target="_blank">Blog</a>
+        </nav>
     </header>
-    <nav>
-        <a href="#home">Início</a>
-        <a href="#contato">Fale Conosco</a>
-        <a href="#blog">Blog</a>
-    </nav>
     
-    <section id="home">
-        <h2>Bem-vindo!</h2>
-        <p>Especialistas em avaliações de imóveis urbanos.</p>
-    </section>
-    
-    <section id="contato">
+    <section>
         <h2>Fale Conosco</h2>
-        <form action="#" method="post" enctype="text/plain">
-            <input type="text" name="Nome" placeholder="Seu nome" required><br>
-            <input type="email" name="Email" placeholder="Seu e-mail" required><br>
-            <textarea name="Mensagem" placeholder="Sua mensagem" required></textarea><br>
+        <p>Preencha o formulário abaixo para entrar em contato conosco.</p>
+        <form action="https://formsubmit.co/davidfalmeida.eng@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Seu nome" required><br>
+            <input type="email" name="email" placeholder="Seu e-mail" required><br>
+            <textarea name="message" placeholder="Sua mensagem" required></textarea><br>
+            <input type="hidden" name="_subject" value="Nova mensagem do site!">
+            <input type="hidden" name="_captcha" value="false">
             <button type="submit">Enviar</button>
         </form>
-    </section>
-    
-    <section id="SITE AINDA EM CONSTRUÇãO">
-        <h2>SITE AINDA EM CONSTRUÇãO</h2>
-        <p>Em breve, conteúdos sobre avaliações de imóveis urbanos.</p>
     </section>
     
     <footer>
