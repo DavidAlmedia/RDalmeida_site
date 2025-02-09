@@ -1,1 +1,145 @@
+!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - RD Almeida Engenharia</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #ddd7d7; }
+        header { background: #FFFFFF; color: #4D4D4D; padding: 5px; display: flex; align-items: center; justify-content: space-between; position: fixed; top: 0; width: 100%; z-index: 1000; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); height: 100px; }     
+        header img { height: 100%; max-height: 100px; margin-left: 10px; object-fit: contain; }
+        nav { margin-right: 20px; position: relative; }
+        nav a { color: #800000; text-decoration: none; padding: 10px; font-weight: bold; position: relative; }
+        .dropdown { position: relative; display: inline-block; }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #800000;
+            min-width: 220px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+        }
+        .dropdown-content a:hover {
+            background-color: white;
+            color: #800000;
+            text-decoration: none;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .full-width-banner {
+            background-color: #800000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            width: 100%;
+            margin-top: 120px;
+            margin-bottom: 20px;
+        }
+        .service-section:nth-child(odd) {
+            background: #800000;
+            color: white;
+            flex-direction: row;
+        }
+        .service-section:nth-child(even) {
+            background: white;
+            color: black;
+            flex-direction: row-reverse;
+        }
+        .service-section {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 10px;
+            'border-bottom: 2px solid #800000;
+        }
+        .service-section img {
+            width: 40%;
+            height: auto;
+            margin: 20px;
+            border-radius: 15px;
+        }
+        .service-section div {
+            flex-grow: 1;
+        }
+        footer { background: #4D4D4D; color: white; text-align: center; padding: 15px; position: relative; bottom:0; width: 100%; }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="CAPA - Copia.png" alt="Logomarca da Empresa">
+        <h1 style="color: #800000; text-align: center; font-size: 36px; flex-grow: 1;">Serviços</h1>
+        <nav>
+            <a href="./index.html">Home</a>
+            <div class="dropdown">
+                <a href="#">Serviços</a>
+                <div class="dropdown-content">
+                    <a href="./avaliacao.html">Avaliação de Imóveis</a>
+                    <a href="./vistoria_cautelar.html">Vistoria - Cautelar de Vizinhança</a>
+                    <a href="./vistoria_entrega.html">Vistoria - Entrega de Chaves</a>
+                    <a href="./vistoria_locativa.html">Vistoria - Locativa</a>
+                    <a href="./vistoria_obras.html">Vistoria - Obras</a>
+                </div>
+            </div>
+            <a href="./contato.html">Contato</a>
+        </nav>
+    </header>
+    
+    <div class="full-width-banner">Nossos Serviços</div>
+    
+    <section class="service-section">
+        <img src="IMAGEM - AVALIAÇÃO.jpg" alt="Avaliação de Imóveis">
+        <div>
+            <h2>Avaliação de Imóveis</h2>
+            <p>Determinação do valor real de um imóvel seguindo normas técnicas e garantindo confiabilidade para negociações.</p>
+        </div>
+    </section>
+    
+    <section class="service-section">
+        <img src="IMAGEM_VISTORIA_CAUTELAR.jpg" alt="Vistoria - Cautelar de Vizinhança">
+        <div>
+            <h2>Vistoria - Cautelar de Vizinhança</h2>
+            <p>Inspeção preventiva de imóveis vizinhos a obras para registrar condições estruturais antes do início das atividades.</p>
+        </div>
+    </section>
+    
+    <section class="service-section">
+        <img src="IMAGEM_VISTORIA_ENTREGA.jpg" alt="Vistoria - Entrega de Chaves">
+        <div>
+            <h2>Vistoria - Entrega de Chaves</h2>
+            <p>Verificação completa do imóvel no momento da entrega, assegurando que as condições estão de acordo com o contrato.</p>
+        </div>
+    </section>
+    
+    <section class="service-section">
+        <img src="IMAGEM_VISTORIA_LOCATIVA.jpg" alt="Vistoria - Locativa">
+        <div>
+            <h2>Vistoria - Locativa</h2>
+            <p>Relatório detalhado das condições do imóvel antes e depois do contrato de locação, protegendo inquilino e proprietário.</p>
+        </div>
+    </section>
+    
+    <section class="service-section" style="margin-bottom: 20px;">
+        <img src="IMAGEM_VISTORIA_OBRAS.jpg" alt="Vistoria - Obras">
+        <div>
+            <h2>Vistoria - Obras</h2>
+            <p>Fiscalização do andamento da obra para garantir conformidade com o projeto e normas técnicas.</p>
+        </div>
+    </section>
+    
+   <footer>
+        &copy; 2025 RD Almeida Engenharia e Serviços
+    </footer>
+</body>
+</html>
 
